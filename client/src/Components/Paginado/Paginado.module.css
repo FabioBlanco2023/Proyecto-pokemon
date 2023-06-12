@@ -1,0 +1,21 @@
+.fBtn{
+    height: 2em;
+    width: 2em;
+    color: black;
+    background: linear-gradient(rgb(6, 9, 170), rgb(86, 89, 253), rgb(107, 70, 194), rgb(50, 163, 216), rgb(18, 218, 191), rgb(60, 210, 0));
+    text-decoration: none;
+    transition: background-color .9s;
+    border-radius: 3px;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.currentPage{
+    color:red;
+    background-color: rgb(211, 9, 9);
+}
+.fooBtn{
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("../../images/pokeBg.jpg");
+    background-size: cover;
+    position: fixed;
+    height: 100vh;
+    width: 100%; 
+}
+
+.title {
+    color: red;
+    text-align: center;
+    font-size: 84px;
+    background: linear-gradient(rgb(6, 9, 170), rgb(86, 89, 253), rgb(107, 70, 194), rgb(50, 163, 216), rgb(18, 218, 191), rgb(60, 210, 0));
+    margin-top: -10%;
+    width: 90%;
+}
+
+.bg h1 {
+    color: red;
+    text-align: center;
+    font-size: 84px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    height: 8em;
+    width: 8em; 
+    border-radius: 10em;
+    margin-top: 5%;
+}
+
+.btnImg{
+    height: 7em;
+    width: auto;
+}
+
+.btn:hover{
+    box-shadow:-1px 2px 52px 26px rgba(216, 13, 13, 0.81);
+    cursor: pointer; 
+}
+
