@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&display=swap');
 .main{
     display: flex;
-    background: url("../../images/bg.jpg");
+    background: url("../../images/pokeBg.jpg");
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -30,19 +30,20 @@
 }
 
 .notfound{
-    color: rgb(210, 0, 0);
+    color: rgb(60, 210, 0);
     font-size: 2em;
     margin-top: 0;
     margin-left: 1.5em;
+    font-family: 'Inconsolata', monospace;
 }
 
 .btn {
 
     font-family: 'Inconsolata', monospace;
     position: relative;
-    background-color: rgb(210, 0, 0);
+    background-color: black;
     border-radius: 5px;
-    box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
+    box-shadow: rgb(60, 210, 0) 1px 6px 1px 1px;
     padding: 15px;
     background-repeat: no-repeat;
     box-sizing: border-box;
@@ -58,7 +59,7 @@
   
 .btn::before {
     content: "";
-    background-color: rgb(133, 0, 0);
+    background-color: rgb(60, 210, 0);
     width: 0;
     height: 100%;
     position: absolute;
@@ -71,4 +72,9 @@
   
   .btn:hover::before {
     width: 100%;
+  }
+
+  .four{
+    color: white;
+    font-size: 36px;
   }

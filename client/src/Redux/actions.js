@@ -48,31 +48,17 @@ export const getAllPokemon = () => {
     type: "CLEAR_SEARCH",
   });
 
-  export function getName(name){
+  export const getName = (name) =>{
+    return async function(dispatch){
     try {
-        return async function(dispatch){
-            var apiData = await axios.get("http://localhost:3001/pokemons?name="+ name);
-            return dispatch({
-                type: "GET_NAME",
-                payload: apiData.data
-            })
+      const apiData=await axios.get(`http://localhost:3001/pokemons/name/${name}`)
+        return dispatch ({type:GET_NAME, payload: apiData.data})   
+      } catch (error) {
+        console.error(error)
+        alert(('Pokemon not found'))
+      }
     }
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-  //export const getName = (name) =>{
-    //return async function(dispatch){
-      //try {
-        //const apiData=await axios.get(`http://localhost:3001/pokemons/name/${name}`)
-        //return dispatch ({type:GET_NAME, payload:apiData.data})   
-      //} catch (error) {
-        //console.error(error)
-        //alert(('Pokemon not found'))
-      //}
-    //}
-  //}
+  }
 
   export const getTypes=()=>{
     return async function(dispatch){

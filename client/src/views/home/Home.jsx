@@ -6,7 +6,7 @@ import { getAllPokemon } from '../../Redux/actions'
 import { useDispatch, useSelector } from "react-redux";
 import load from '../../images/poke_load.gif'
 import Paginado from '../../Components/Paginado/Paginado'
-//import SearchBar from '../../Components/SearchBar/SearchBar';
+
 
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
   const allPoke=useSelector((state)=>state)
   const pokeName=useSelector((state)=>state.currentPoke)
   const [page, setPage]=useState(1)
-  //cant de paginas a mostrar
+  //cantidad de paginas a mostrar
   const [perPage] = useState(12);
 
   // Calcula los índices del primer y último pokemon a mostrar
@@ -30,7 +30,7 @@ const Home = () => {
   useEffect(() => {
     dispatch(getAllPokemon());
   }, [dispatch]);
-console.log("ESTO ES POKENAME",pokeName)
+console.log("ESTO ES POKENAME", pokeName)
 
   return (
     <div className={styles.main}>
@@ -56,9 +56,10 @@ console.log("ESTO ES POKENAME",pokeName)
           ) : (
             <img className={styles.load} src={load} alt="something" />
           )}
+          {pokemonsToShow?.length && console.log("pokemonsToShow", pokemonsToShow)}
           </section>
         </main>
-
+       
       <div className={styles.pag}>
         <Paginado page={page} setPage={setPage} max={max} />
       </div>
@@ -69,4 +70,4 @@ console.log("ESTO ES POKENAME",pokeName)
   )
 }
 
-export default Home
+export default Home;

@@ -6,6 +6,11 @@ import SearchBar from '../SearchBar/SearchBar'
 const NavBar = ({onSearch}) => {
   const location=useLocation()
 
+  const handleClick = (event) => {
+    event.preventDefault();
+    window.location.reload();
+};
+
   const isHomePage = location.pathname === "/home";
   return (
     <div className={styles.main}>
@@ -15,7 +20,15 @@ const NavBar = ({onSearch}) => {
           <SearchBar onSearch={onSearch}/>
         </div>}
         <Link to="/form" className={styles.form}>POKEMON +</Link>
+          
+            <Link  exact to="/">RETURN TO LANDING</Link >
+            
       </div>
+          <div>
+          <button className={styles.circularButton} onClick={(event) => handleClick(event)}>
+          Recargar Página ↻
+          </button>
+          </div>
     </div>
   )
 }
