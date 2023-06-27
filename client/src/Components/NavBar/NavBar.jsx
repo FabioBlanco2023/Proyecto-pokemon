@@ -15,13 +15,13 @@ const NavBar = ({onSearch}) => {
   return (
     <div className={styles.main}>
       <div className={styles.cont}>
-        <Link to="/home" className={styles.link}>Home</Link>
+        <Link to="/home" className={styles.link}>HOME</Link>
         {isHomePage && <div className={styles.search}>
           <SearchBar onSearch={onSearch}/>
         </div>}
         <Link to="/form" className={styles.form}>POKEMON +</Link>
           
-            <Link  exact to="/">RETURN TO LANDING</Link >
+            <Link  className = {styles.returnto} exact to="/">RETURN TO LANDING</Link >
             
       </div>
           <div>

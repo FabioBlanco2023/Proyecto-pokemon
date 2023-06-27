@@ -27,6 +27,7 @@ const getAllPokemons= async (req, res)=>{
             })
             
         }))
+        
         return pokeData
     
     } catch (error) {

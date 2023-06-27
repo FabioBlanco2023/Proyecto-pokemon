@@ -58,6 +58,7 @@ console.log("ESTO ES POKENAME", pokeName)
           )}
           {pokemonsToShow?.length && console.log("pokemonsToShow", pokemonsToShow)}
           </section>
+          
         </main>
        
       <div className={styles.pag}>
@@ -66,7 +67,9 @@ console.log("ESTO ES POKENAME", pokeName)
 
       <footer className={styles.footer}>
       </footer>
+      
     </div>
+    
   )
 }
 

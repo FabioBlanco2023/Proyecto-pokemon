@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 6em;
+    height: 3em;
     border-bottom: 2em solid rgb(60, 210, 0);
 }
 
@@ -23,7 +23,7 @@
 
 .form, .link{
     color: white;
-    font-size:x-large;
+    font-size:23px;
     text-decoration-line: none;
     margin-top: 3%;
 }
@@ -33,6 +33,7 @@
 }
 
 .link{
+    font-size:23px;
     margin-right: 3.5em;
 }
 
@@ -54,6 +55,7 @@
     bottom: 20px;
     right: 20px;
     display: flex;
+    color: red;
     justify-content: center;
     align-items: center;
     width: 100px;
@@ -62,3 +64,10 @@
     background-color: yellow;
     font-size: 32px;
   }
+
+  .returnto{
+    color: white;
+    font-size:23px;
+    text-decoration-line: none;
+    margin-top: 3%;
+}
